@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header__nav">
+    <header class="header">
+        <div class="header__buttons">
             <div class="header__logo">
                 <button class="header__btn">
                     <div class="header__icon">
@@ -24,74 +24,58 @@
                 <div class="header__separator"></div>
                 <img src="src/images/Logo.svg" alt="Logo">
             </div>
-            <div class="nav__bar">
-                <div class="nav__tablet">
-                    <button class="header__btn">
-                        <img src="src/images/Phone.svg" alt="Phone">
-                    </button>
-                    <button class="header__btn">
-                        <img src="src/images/Message.svg" alt="Message">
-                    </button>
-                    <button class="header__btn">
-                        <img src="src/images/Profile.svg" alt="Profile">
-                    </button>
+            <div class="header__bar">
+                <div class="header__tablet">
+                    <button class="header__btn header__btn_phone"></button>
+                    <button class="header__btn header__btn_message"></button>
+                    <button class="header__btn header__btn_profile"></button>
                 </div>
                 <div class="header__separator"></div>
                 <div class="header__phone">
-                    <button class="header__btn">
-                        <img src="src/images/SettingsLogo.svg" alt="Settings">
-                    </button>
-                    <button class="header__btn">
-                        <img src="src/images/SearchLogo.svg" alt="Search">
-                    </button>
+                    <button class="header__btn header__btn_settings"></button>
+                    <button class="header__btn header__btn_search"></button>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="main-container">
-        <main>
+    <main class="main">
+        <div class="main__container">
             <div class="main__header">
-                <div class="header__marker"></div>
-                <h1 class="header__text">Услуги и сервис</h1>
-                <div class="main__nav">
-                    <div class="label">
-                        <span>Оставить заявку</span>
-                        <button class="header__btn">
-                            <img src="src/images/SettingsLogo.svg" alt="File a claim">
-                        </button>
-                    </div>
-                    <div class="label">
-                        <span>Статус ремонта</span>
-                        <button class="header__btn">
-                            <img src="src/images/SearchLogo.svg" alt="Repair status">
-                        </button>
-                    </div>
+                <h1 class="main__title">Услуги и сервис</h1>
+                <div class="main__buttons">
+                    <button class="main__btn main__btn_settings">
+                        Оставить заявку
+                    </button>
+                    <button class="main__btn main__btn_search">
+                        Статус ремонта
+                    </button>
                 </div>
             </div>
-            <div class="slider">
-                <span class="slider__slide slider__slide_active">Ремонтируемые бренды</span>
-                <span class="slider__slide">Ремонтируемые устройства</span>
-                <span class="slider__slide">Цены на услуги</span>
-                <span class="slider__slide">Адреса сервисных центров</span>
-                <span class="slider__slide">Специальные цены</span>
-                <span class="slider__slide">Отзывы</span>
-            </div>
+            <div class="main__mask"></div>
+            <nav class="main__nav nav">
+                <a href="#" class="main__a main__a_active">Ремонтируемые бренды</a>
+                <a href="#" class="main__a">Ремонтируемые устройства</a>
+                <a href="#" class="main__a">Цены на услуги</a>
+                <a href="#" class="main__a">Адреса сервисных центров</a>
+                <a href="#" class="main__a">Специальные цены</a>
+                <a href="#" class="main__a">Отзывы</a>
+            </nav>
             <article class="main__about">
-                <div class="about__read">
-                    <p class="about__description">
+                <div class="main__text">
+                    <p class="main__paragraph">
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
                         вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
-                    <p class="about__description">
+                    <p class="main__paragraph">
                         <span>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
                         <span>, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                     </p>
-                    <span class="read__text">Читать далее</span>
+                    <button class="main__read">Читать далее</button>
                 </div>
-                <img class="read__photo" src="src/images/Service.png" alt="Services">
+                <img class="main__photo" src="src/images/Service.jpg" alt="Services">
             </article>
-        </main>
-    </div>
+        </div>
+    </main>
     <script src="src/scripts/script.js"></script>
 </body>
 
