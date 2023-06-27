@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-DemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Medium.ttf');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Regular.ttf');
+    font-weight: normal;
+}
+
+.sidebar {
+    padding-top: 19px;
+    padding-bottom: 32px;
+    width: 320px;
+    height: 1024px;
+    font-family: TT Lakes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 16px 0 52px #0E185033, -2px 0px 4px 0px #454F7E05;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__logo {
+    margin-left: 17px;
+}
+
+.sidebar__btn {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__line {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.line1 {
+    transform: rotate(45deg);
+}
+
+.line2 {
+    transform: rotate(-45deg);
+}
+
+.sidebar__header > .sidebar__btn:nth-child(1) {
+    margin-left: 24px;
+}
+
+.sidebar__header > .sidebar__btn:nth-child(3) {
+    margin-left: 79px;
+}
+
+.sidebar__menu {
+    margin-top: 46px;
+    padding: 0;
+}
+
+.sidebar__item {
+    list-style-type: none;
+    margin-bottom: 32px;
+    padding: 0;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__item_active {
+    color: #7E7E82;
+}
+
+.sidebar__item_active::before {
+    content: '';
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    position: absolute;
+    border-radius: 0 7px 7px 0;
+}
+
+.sidebar__text {
+    margin-left: 24px;
+}
+
+.sidebar__footer {
+    margin-left: 24px;
+}
+
+.sidebar__buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.sidebar__email {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.sidebar__phone {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar__languages {
+    margin-top: 40px;
+}
+
+.sidebar__language_active {
+    color: #7E7E82;
+}

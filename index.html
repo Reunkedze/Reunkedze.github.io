@@ -3,80 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/styles/normalize.css">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/style/normalize.css">
+    <link rel="stylesheet" href="src/style/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__buttons">
-            <div class="header__logo">
-                <button class="btn btn_small">
-                    <div class="header__icon">
-                        <div class="header__line line1"></div>
-                        <div class="header__line line2"></div>
-                        <div class="header__line line3"></div>
-                    </div>
-                </button>
-                <div class="header__separator"></div>
-                <img src="src/images/Logo.svg" alt="Logo">
-            </div>
-            <div class="header__bar">
-                <div class="header__tablet">
-                    <button class="btn btn_small btn_phone"></button>
-                    <button class="btn btn_small btn_message"></button>
-                    <button class="btn btn_small btn_profile"></button>
+    <aside class="sidebar">
+        <div>
+            <div class="sidebar__header">
+                <div class="sidebar__btn btn">
+                    <div class="btn__line line1"></div>
+                    <div class="btn__line line2"></div>
                 </div>
-                <div class="header__separator"></div>
-                <div class="header__phone">
-                    <button class="btn btn_small btn_settings"></button>
-                    <button class="btn btn_small btn_search"></button>
+                <img class="sidebar__logo" src="src/images/Logo.svg" alt="Logo">
+                <div class="sidebar__btn">
+                    <img src="src/images/SearchLogo.svg" alt="Search">
                 </div>
             </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item sidebar__item_active"><span class="sidebar__text">Ремонт техники</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Услуги и сервисы</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Корпоративным клиентам</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Продавцам техники</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Партнерам</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Производителям</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Наши сервисные центры</span></li>
+                <li class="sidebar__item"><span class="sidebar__text">Контакты</span></li>
+            </ul>
         </div>
-    </header>
-    <main class="main">
-        <div class="main__container">
-            <div class="main__header">
-                <h1 class="main__title">Услуги и сервис</h1>
-                <div class="main__buttons">
-                    <button class="btn btn_settings">
-                        Оставить заявку
-                    </button>
-                    <button class="btn btn_search">
-                        Статус ремонта
-                    </button>
+        <footer class="sidebar__footer">
+            <div class="sidebar__buttons">
+                <div class="sidebar__btn">
+                    <img src="src/images/Phone.svg" alt="Phone">
+                </div>
+                <div class="sidebar__btn">
+                    <img src="src/images/Message.svg" alt="Message">
+                </div>
+                <div class="sidebar__btn">
+                    <img src="src/images/Profile.svg" alt="Profile">
                 </div>
             </div>
-            <div class="main__mask"></div>
-            <nav class="main__nav nav">
-                <a href="#" class="main__a main__a_active">Ремонтируемые бренды</a>
-                <a href="#" class="main__a">Ремонтируемые устройства</a>
-                <a href="#" class="main__a">Цены на услуги</a>
-                <a href="#" class="main__a">Адреса сервисных центров</a>
-                <a href="#" class="main__a">Специальные цены</a>
-                <a href="#" class="main__a">Отзывы</a>
-            </nav>
-            <article class="main__about">
-                <div class="main__text">
-                    <p class="main__paragraph">
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
-                        вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    </p>
-                    <p class="main__paragraph">
-                        <span>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
-                        <span>, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-                    </p>
-                    <button class="main__read">Читать далее</button>
-                </div>
-                <img class="main__photo" src="src/images/Service.jpg" alt="Services">
-            </article>
-        </div>
-    </main>
-    <script src="src/scripts/script.js"></script>
+            <div class="sidebar__email">mail@cps.com</div>
+            <div class="sidebar__phone">8 800 890 8900</div>
+            <div class="sidebar__languages">
+                <span class="sidebar__language sidebar__language_active">RU</span>
+                <span class="sidebar__language">EN</span>
+                <span class="sidebar__language">CH</span>
+            </div>
+        </footer>
+    </aside>
 </body>
 
 </html>
