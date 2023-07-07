@@ -62,36 +62,32 @@
     justify-content: center;
     align-items: center;
     border-width: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_cross {
+    background-image: url("../images/Cross.svg")
 }
 
 .btn_settings {
     background-image: url("../images/SettingsLogo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn_search {
     background-image: url("../images/SearchLogo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn_phone {
-    background-image: url(../images/Phone.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../images/Phone.svg");
 }
 
 .btn_message {
-    background-image: url(../images/Message.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../images/Message.svg");
 }
 
 .btn_profile {
     background-image: url('../images/Profile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .header__bar {
@@ -114,22 +110,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.btn__line {
-    width: 22px;
-    height: 2px;
-    background-color: white;
-    border-radius: 2px;
-    position: absolute;
-}
-
-.line1 {
-    transform: rotate(45deg);
-}
-
-.line2 {
-    transform: rotate(-45deg);
 }
 
 .sidebar__header > .sidebar__btn:nth-child(1) {
