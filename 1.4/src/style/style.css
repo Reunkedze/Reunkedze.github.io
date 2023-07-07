@@ -76,6 +76,24 @@
     background-position: center;
 }
 
+.btn_phone {
+    background-image: url(../images/Phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_message {
+    background-image: url(../images/Message.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_profile {
+    background-image: url('../images/Profile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .header__bar {
     width: 118px;
     display: flex;
