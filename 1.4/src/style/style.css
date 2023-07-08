@@ -148,6 +148,10 @@
   color: #7e7e82;
 }
 
+.sidebar__item_active > .sidebar__text {
+  color: #7e7e82;
+}
+
 .sidebar__item_active::before {
   content: "";
   width: 4px;
@@ -159,6 +163,8 @@
 
 .sidebar__text {
   margin-left: 24px;
+  text-decoration: none;
+  color: #1b1c21;
 }
 
 .sidebar__footer {
