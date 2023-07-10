@@ -139,6 +139,10 @@
     display: none;
   }
 }
+.sidebar {
+  overflow: auto;
+}
+
 @media (max-width: 359px) {
   .sidebar {
     width: 320px;
@@ -265,6 +269,21 @@
 }
 .sidebar .sidebar__languages {
   margin-top: 40px;
+}
+.sidebar .sidebar__language {
+  margin-right: 7px;
+}
+.sidebar .sidebar__language:hover {
+  text-shadow: 0 0 1px #1b1c21;
+}
+.sidebar .sidebar__language-radio:checked + .sidebar__language {
+  color: #7e7e82;
+}
+.sidebar .sidebar__language-radio {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .sidebar_hidden {
