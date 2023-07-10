@@ -51,52 +51,53 @@
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
-
   <aside class="sidebar sidebar_hidden">
-    <div class="sidebar__upper">
-      <div class="sidebar__header">
-        <button class="btn btn_small btn_cross"></button>
-        <a class="sidebar__link" href="https://reunkedze.github.io/">
-          <img class="sidebar__logo" src="src/img/Logo.svg" alt="Logo">
-        </a>
-        <button class="btn btn_small btn_search"></button>
+    <div class="sidebar__container">
+      <div class="sidebar__upper">
+        <div class="sidebar__header">
+          <button class="btn btn_small btn_cross"></button>
+          <a class="sidebar__link" href="https://reunkedze.github.io/">
+            <img class="sidebar__logo" src="src/img/Logo.svg" alt="Logo">
+          </a>
+          <button class="btn btn_small btn_search"></button>
+        </div>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__menu">
+            <li class="sidebar__item sidebar__item_active"><a class="sidebar__text" href="#">Ремонт техники</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Услуги и сервисы</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Корпоративным клиентам</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Продавцам техники</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Партнерам</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Производителям</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Наши сервисные центры</a></li>
+            <li class="sidebar__item"><a class="sidebar__text" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="sidebar__nav">
-        <ul class="sidebar__menu">
-          <li class="sidebar__item sidebar__item_active"><a class="sidebar__text" href="#">Ремонт техники</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Услуги и сервисы</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Корпоративным клиентам</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Продавцам техники</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Партнерам</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Производителям</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Наши сервисные центры</a></li>
-          <li class="sidebar__item"><a class="sidebar__text" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <footer class="sidebar__footer">
+        <div class="sidebar__buttons">
+          <button class="btn btn_small btn_phone"></button>
+          <button class="btn btn_small btn_message"></button>
+          <button class="btn btn_small btn_profile"></button>
+        </div>
+        <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="sidebar__phone" href="tel:+7 (800) 890 89 00">8 800 890 8900</a>
+        <div class="sidebar__languages">
+          <input class="sidebar__language-radio" type="radio" name="language" value="ru" id="ru" checked="checked">
+          <label class="sidebar__language" for="ru">
+            RU
+          </label>
+          <input class="sidebar__language-radio" type="radio" name="language" value="en" id="en">
+          <label class="sidebar__language" for="en">
+            EN
+          </label>
+          <input class="sidebar__language-radio" type="radio" name="language" value="ch" id="ch">
+          <label class="sidebar__language" for="ch">
+            CH
+          </label>
+        </div>
+      </footer>
     </div>
-    <footer class="sidebar__footer">
-      <div class="sidebar__buttons">
-        <button class="btn btn_small btn_phone"></button>
-        <button class="btn btn_small btn_message"></button>
-        <button class="btn btn_small btn_profile"></button>
-      </div>
-      <a class="sidebar__email" href="mailto:mail@cps.com">mail@cps.com</a>
-      <a class="sidebar__phone" href="tel:+7 (800) 890 89 00">8 800 890 8900</a>
-      <div class="sidebar__languages">
-        <input class="sidebar__language-radio" type="radio" name="language" value="ru" id="ru" checked="checked">
-        <label class="sidebar__language" for="ru">
-          RU
-        </label>
-        <input class="sidebar__language-radio" type="radio" name="language" value="en" id="en">
-        <label class="sidebar__language" for="en">
-          EN
-        </label>
-        <input class="sidebar__language-radio" type="radio" name="language" value="ch" id="ch">
-        <label class="sidebar__language" for="ch">
-          CH
-        </label>
-      </div>
-    </footer>
   </aside>
 
   <header class="header">
