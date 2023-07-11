@@ -74,7 +74,7 @@
           </ul>
         </nav>
       </div>
-      <footer class="sidebar__footer">
+      <div class="sidebar__footer">
         <div class="sidebar__buttons">
           <button class="btn btn_small btn_phone"></button>
           <button class="btn btn_small btn_message"></button>
@@ -96,8 +96,37 @@
             CH
           </label>
         </div>
-      </footer>
+      </div>
     </div>
+  </aside>
+
+  <aside class="feedback feedback_hidden">
+    <div class="feedback__cross btn btn_small btn_cross"></div>
+    <h2 class="feedback__header">Обратная связь</h2>
+    <form action="" class="feedback__form">
+      <input type="text" class="feedback__input" placeholder="Имя">
+      <input type="text" class="feedback__input" placeholder="Телефон">
+      <input type="text" class="feedback__input" placeholder="Электронная почта">
+      <textarea name="" id="" cols="30" rows="10" class="feedback__message" placeholder="Сообщение"></textarea>
+      <p class="feedback__confidential">
+        Нажимая “отправить”, вы даете согласие на <a class="feedback__link" href="#">обработку персональных данных</a> и
+        соглашаетесь с нашей <a class="feedback__link" href="#">политикой конфиденциальности</a>
+      </p>
+      <input class="feedback__send" type="submit">
+    </form>
+  </aside>
+
+  <aside class="call call_hidden">
+    <div class="call__cross btn btn_small btn_cross"></div>
+    <h2 class="call__header">Заказать звонок</h2>
+    <form action="" class="call__form">
+      <input type="text" class="call__input" placeholder="Телефон">
+      <p class="call__confidential">
+        Нажимая “отправить”, вы даете согласие на <a class="call__link" href="#">обработку персональных данных</a> и
+        соглашаетесь с нашей <a class="call__link" href="#">политикой конфиденциальности</a>
+      </p>
+      <input class="call__send" type="submit">
+    </form>
   </aside>
 
   <header class="header">
