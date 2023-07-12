@@ -1,0 +1,97 @@
+.offer {
+  margin: auto;
+  margin-bottom: 58px;
+
+  .offer__text,
+  .offer__link {
+    background: #f8f8f8;
+  }
+
+  .offer__link {
+    display: block;
+  }
+
+  .offer__link::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    background-image: url('../img/ArrowRight.svg');
+    background-position: 0 -2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    width: 320px;
+
+    .offer__text,
+    .offer__link {
+      background: #f8f8f8;
+    }
+
+    .offer__text {
+      width: 250px;
+      padding: 0 16px;
+    }
+
+    .offer__link {
+      margin: 0 16px;
+      width: 200px;
+      color: #1b1c21;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .offer {
+    width: 768px;
+
+    .offer__text,
+    .offer__link {
+      background: #f8f8f8;
+    }
+
+    .offer__text {
+      width: 421px;
+      padding: 0 24px;
+    }
+
+    .offer__link {
+      margin: 0 24px;
+      width: 316px;
+      color: #1b1c21;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .offer {
+    width: 1120px;
+
+    .offer__text,
+    .offer__link {
+      background: #f8f8f8;
+    }
+
+    .offer__text {
+      width: 421px;
+      padding: 0 32px;
+    }
+
+    .offer__link {
+      margin: 0 32px;
+      width: 316px;
+      color: #1b1c21;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}

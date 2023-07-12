@@ -1,0 +1,165 @@
+.header {
+  padding: 19px 0 19px 0;
+}
+
+.header__phone {
+  width: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .header__separator:nth-child(2),
+  .header__tablet {
+    display: none;
+  }
+
+  .header__bar > .header__separator:nth-child(2) {
+    display: block;
+  }
+
+  .header__buttons {
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__bar {
+    width: 122px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header__line {
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+  }
+
+  .header__icon {
+    .line1 {
+      width: 18px;
+    }
+
+    .line2 {
+      width: 10px;
+    }
+
+    .line3 {
+      width: 14px;
+    }
+  }
+
+  .header__separator {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__buttons,
+  .swiper,
+  .main__mask {
+    display: none;
+  }
+
+  .header__buttons {
+    width: 768px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .header__bar {
+    width: 292px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .header__separator:nth-child(2) {
+    display: block;
+  }
+
+  .header__icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header__line {
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+  }
+
+  .header__icon {
+    .line1 {
+      width: 18px;
+    }
+
+    .line2 {
+      width: 10px;
+    }
+
+    .line3 {
+      width: 14px;
+    }
+  }
+
+  .header__separator {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+}

@@ -1,0 +1,109 @@
+.btn {
+  height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  font-weight: 600;
+  background: transparent;
+  padding: 0;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+}
+
+.btn:hover::after {
+  box-shadow: 0 0 6px #ff3e79;
+  opacity: 0.9;
+}
+
+.btn_cross:after {
+  content: '';
+  position: absolute;
+}
+
+.btn_burger::after {
+  background-image: url('../img/Burger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_cross::after {
+  background-image: url('../img/Cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_settings::after {
+  background-image: url('../img/SettingsLogo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_search::after {
+  background-image: url('../img/SearchLogo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_phone::after {
+  background-image: url('../img/Phone.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_message::after {
+  background-image: url('../img/Message.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_profile::after {
+  background-image: url('../img/Profile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn_transparent {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_transparent::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ff3e79;
+  border-right: 2px solid #ff3e79;
+  transform: translateX(-3px) rotate(45deg);
+}
+
+.btn_link {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  color: white;
+  background-color: #ff3e79;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+
+.btn_link::after {
+  content: '';
+  width: 7px;
+  height: 10px;
+  background-image: url('../img/Dropdown.svg');
+}

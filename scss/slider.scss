@@ -1,0 +1,216 @@
+.main__show {
+  border: none;
+  color: #1b1c21;
+  background: #f8f8f8;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main__show_hidden {
+  margin: 8px 32px 34px;
+}
+
+.main__show_shown {
+  margin: 0 32px 34px;
+}
+
+.main__show_hidden::before {
+  content: '';
+  display: block;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/Arrows.svg');
+}
+
+.main__show_shown::before {
+  content: '';
+  display: block;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/Arrows.svg');
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .brands {
+    display: none;
+  }
+
+  html {
+    body {
+      .swiper {
+        width: 320px;
+        height: 205px;
+
+        h1 {
+          margin-top: 0;
+          margin-bottom: 16px;
+          padding: 16px;
+          padding-bottom: 10px;
+          height: 48px;
+          background: white;
+          color: #7e7e82;
+          font-family: TT Lakes;
+          font-size: 18px;
+          font-weight: normal;
+        }
+
+        .swiper-slide {
+          width: 240px;
+          height: 72px;
+          justify-content: space-around;
+          background: #f8f8f8;
+
+          .slider__wrapper {
+            padding: 0 16px;
+            width: 240px;
+            height: 72px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+              width: 108px !important;
+              height: 32px !important;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ff3e79;
+    border-right: 2px solid #ff3e79;
+    transform: translateX(-3px) rotate(45deg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .swiper,
+  .main__brand:nth-child(n + 7) {
+    display: none;
+  }
+
+  .brands {
+    margin: auto;
+    width: 768px;
+  }
+
+  .brands__header {
+    margin: 0;
+    padding: 16px 24px;
+    height: 56px;
+    background-color: white;
+    color: #7e7e82;
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    line-height: 56px;
+  }
+
+  .main__brands {
+    padding: 24px 24px 16px;
+    height: 160px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 224px 224px 224px;
+    grid-template-rows: 72px 72px;
+    gap: 16px 24px;
+  }
+
+  .main__hidden {
+    padding: 0 24px 24px;
+    height: 72px;
+    display: none;
+    grid-template-columns: 224px 224px 224px;
+    grid-template-rows: 72px;
+    gap: 24px;
+  }
+
+  .main__brand {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main__brand > img {
+    width: 108px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper {
+    display: none;
+  }
+
+  .brands {
+    margin: auto;
+    width: 1120px;
+  }
+
+  .brands__header {
+    margin: 0;
+    padding: 16px 32px;
+    height: 56px;
+    background-color: white;
+    color: #7e7e82;
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    line-height: 56px;
+  }
+
+  .main__brands {
+    padding: 24px 32px 16px;
+    height: 160px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 72px 72px;
+    gap: 16px 32px;
+  }
+
+  .main__hidden {
+    padding: 0 32px 24px;
+    height: 72px;
+    display: none;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 72px;
+    gap: 16px 32px;
+  }
+
+  .main__brand {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main__brand > img {
+    width: 108px;
+    height: 32px;
+  }
+
+  .main__arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ff3e79;
+    border-right: 2px solid #ff3e79;
+    transform: translateX(-3px) rotate(45deg);
+  }
+}

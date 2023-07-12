@@ -1,0 +1,60 @@
+.footer {
+  margin: auto;
+  padding-bottom: 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 320px;
+  }
+
+  .footer__info {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .footer {
+    width: 768px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__team {
+      width: 218px;
+    }
+
+    .footer__policy {
+      width: 214px;
+    }
+
+    .footer__info {
+      width: 213px;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .footer {
+    width: 1120px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__team {
+      width: 218px;
+    }
+
+    .footer__policy {
+      width: 214px;
+    }
+
+    .footer__info {
+      width: 213px;
+    }
+  }
+}
